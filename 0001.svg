@@ -32,16 +32,4 @@
   <!-- Edge highlight -->
   <rect x="46" y="46" width="1108" height="358" rx="40" ry="40"
         fill="none" stroke="url(#edgeHighlight)" stroke-width="3"/>
-
-  <!-- Silkscreen text -->
-  <text x="600" y="90" text-anchor="middle"
-        fill="#cfd2cf" font-family="monospace" font-size="18">
-    PCB BASE — REV A
-  </text>
-
-  <text x="600" y="410" text-anchor="middle"
-        fill="#7a8a7f" font-family="monospace" font-size="14">
-    EMPTY BOARD • READY FOR COMPONENT LAYERING
-  </text>
-
 </svg>
