@@ -1,0 +1,47 @@
+<svg width="1200" height="450" viewBox="0 0 1200 450" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- PCB gradient -->
+  <defs>
+    <linearGradient id="pcbGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f7a3b"/>
+      <stop offset="50%" stop-color="#14552a"/>
+      <stop offset="100%" stop-color="#0d3a1d"/>
+    </linearGradient>
+
+    <!-- Via pattern -->
+    <pattern id="viaPattern" x="0" y="0" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="2" fill="#174f28" />
+      <circle cx="12" cy="12" r="2" fill="#174f28" />
+    </pattern>
+
+    <!-- Edge highlight -->
+    <linearGradient id="edgeHighlight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2fbf63" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#2fbf63" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Main PCB shape -->
+  <rect x="40" y="40" width="1120" height="370" rx="45" ry="45"
+        fill="url(#pcbGrad)" stroke="#0b2413" stroke-width="6"/>
+
+  <!-- Via texture overlay -->
+  <rect x="40" y="40" width="1120" height="370" rx="45" ry="45"
+        fill="url(#viaPattern)" opacity="0.25"/>
+
+  <!-- Edge highlight -->
+  <rect x="46" y="46" width="1108" height="358" rx="40" ry="40"
+        fill="none" stroke="url(#edgeHighlight)" stroke-width="3"/>
+
+  <!-- Silkscreen text -->
+  <text x="600" y="90" text-anchor="middle"
+        fill="#cfd2cf" font-family="monospace" font-size="18">
+    PCB BASE — REV A
+  </text>
+
+  <text x="600" y="410" text-anchor="middle"
+        fill="#7a8a7f" font-family="monospace" font-size="14">
+    EMPTY BOARD • READY FOR COMPONENT LAYERING
+  </text>
+
+</svg>
